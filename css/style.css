@@ -211,6 +211,7 @@ p {
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
+    position: relative;
 }
 .menu-item{
     flex-basis: calc((100% - 3 * 30px) / 3);
@@ -222,8 +223,32 @@ p {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
-    color:var(--second-text-color);
+    color: var(--second-text-color);
     text-align: center;
+}
+.items{
+    position: relative;
+}
+.list-item{
+    position: relative;
+}
+.name-card{
+    width: 370px;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    background-color:rgba(47, 48, 58, 0.8);
+    text-align: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin-bottom: 4px;
+}
+.title-image{
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0;
 }
 /* Our Team */
 .title-name{
