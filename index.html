@@ -377,9 +377,13 @@
             </section>
         </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal data-modal-close>
         <div class="modal">
-            <buttton class="button-modal" data-modal-close>закрыть</buttton>
+            <buttton class="button-modal" data-modal-close>
+                <svg class="icon-modal">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </buttton>
         </div>
     </div>
     <script src="./js/modal.js"></script>
