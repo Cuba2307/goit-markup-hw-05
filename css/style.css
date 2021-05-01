@@ -100,9 +100,7 @@ p {
     line-height: 1.33;
     color: var(--second-text-color);
     text-decoration: none;
-    transition-property: var(--accent-text-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-mail,.icon-phone{
     margin-right: 10px;
@@ -134,9 +132,7 @@ p {
     line-height: 1.33;
     text-decoration: none;
 
-    transition-property: var(--accent-text-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .aut-site .link:hover,
 .aut-site .link:focus{
@@ -299,9 +295,8 @@ p {
     margin-bottom: 30px;
     color: var(--icon-color-team);
 
-    transition-property: var(--accent-text-color),var(--main-text-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-svg{
     fill: currentColor;
@@ -340,9 +335,8 @@ p {
     align-items: center;
     color: var(--icon-color-team);
 
-    transition-property: var(--accent-text-color),var(--accent-text-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-group{
     fill: currentColor;
@@ -414,9 +408,7 @@ p {
     align-items: center;
     background-color: rgba(255, 255, 255, 0.1);
 
-    transition-property: var(--accent-text-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-footer-svg:hover,
 .link-footer-svg:focus{
@@ -494,7 +486,8 @@ p {
     line-height: 1.55;
     color: var(--main-text-color);
 }
-.link-port:hover .techno{
+.link-port:hover .techno,
+.link-port:focus .techno{
     opacity: 1;
     transform: translateY(-100%);
 }
