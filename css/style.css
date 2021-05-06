@@ -375,8 +375,13 @@ p {
 .mail-position{
     margin-bottom: 9px;
 }
-.link{
+.link.mail{
     font-style: normal;
+    font-weight: 400;
+}
+.link.telephone{
+    font-style: normal;
+    font-weight: 400;
 }
 .mail,.telephone{
     padding: 0;
